@@ -6,11 +6,11 @@
 
 ## Abstract
 
-Every AI feature now carries a real, variable cost behind every single user interaction — and the old SaaS margin playbook, 80-90% gross margins built on near-zero marginal cost per user, doesn't survive contact with token-based pricing. Bessemer's own research shows AI-native companies running 50-60% gross margins versus 80-90% for classic SaaS, on the same measure — the gap is compute, not overhead.
+Every AI feature now carries a real, variable cost behind every single user interaction — and the math behind that cost is stranger than most people building AI products realize. AI spend is linear in tokens, never exponential, yet bills routinely blow up 30x when usage only grows 10x — because what actually drifts is tokens-per-user, not the pricing curve itself. That gap is also a margin problem: Bessemer's research shows AI-native companies running 50-60% gross margins versus 80-90% for classic SaaS, on the same measure.
 
-In this talk, [Name] introduces Tokenomics: the discipline of knowing what a query, a task, or a tenant actually costs you before you ever set a customer price. That sequencing matters — Salesforce launched Agentforce on flat $2-per-conversation pricing, and within months added two more ways to pay (Flex Credits and per-seat licensing) after customers couldn't predict their bills or agree on what counted as one "conversation." Workday and ServiceNow landed on the same hybrid shape independently.
+This talk introduces Tokenomics — the discipline of knowing what a query, a task, or a tenant actually costs before you ever set a customer price — through a practical three-stage framework: Inform (see the spend), Optimize (cut it — caching, batching, and the commitment math that actually pays off), and Operate (govern it, through a real story of an AI agent that cost 21x more than it should have, and the five guardrails that prevent it). Along the way: why Salesforce launched Agentforce on flat $2-per-conversation pricing and had to add two more ways to pay within months, after customers couldn't predict their bills — and how Workday and ServiceNow landed on the same hybrid shape independently.
 
-Drawing on those public pricing evolutions plus [Name]'s own hands-on work building live AI cost-attribution infrastructure and shipping real, guardrailed agentic systems, this session gives founders the cost-side discipline that has to come before any pricing decision — and gives investors a new diligence lens: ask what a startup's tokenomics and guardrails look like before you ask what they charge.
+Attendees leave with a live, interactive token-cost calculator to try themselves, a pricing checklist for founders, and — for investors — a new diligence question: ask what a startup's tokenomics and guardrails look like before you ask what they charge.
 
 ## Sourcing note
 
