@@ -7,9 +7,9 @@ Content for a ~17-slide deck matching [`outline-30min-v2.md`](outline-30min-v2.m
 ### Slide 1 — Title
 
 **Tokenomics**
-The New Unit Economics Every AI Founder and Investor Needs to Understand
+Making Sense of AI Spend Before It Makes Sense of You
 
-*(speaker name / PitchXPO Conclave 2026)*
+Uday Nagulavancha · PitchXPO Conclave 2026 · September 22, 2026
 
 ---
 
