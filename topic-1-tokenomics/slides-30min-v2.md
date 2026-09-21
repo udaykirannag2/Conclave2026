@@ -1,6 +1,6 @@
 # Topic 1 — 30-Minute Slide Words (v2)
 
-Content for a ~17-slide deck matching [`outline-30min-v2.md`](outline-30min-v2.md). Words only — no layout, imagery, or design direction.
+Content for a 13-slide deck matching [`outline-30min-v2.md`](outline-30min-v2.md). Words only — no layout, imagery, or design direction. Slides 5 and 6 follow the sparse-slide-plus-speaker-notes pattern from the source [Module 1 Slides design doc](https://claude.ai/design/p/772ae942-8d32-4921-ba76-3943adcdb6fb) (slides 25 and 16) — minimal on-screen text, full narration in speaker notes.
 
 ---
 
@@ -39,92 +39,36 @@ A framework — a practice — for making sense of your AI spend, and figuring o
 
 ---
 
-### Slide 5 — Section: Where FinOps Breaks for AI
+### Slide 5 — Where Cloud FinOps Breaks for AI
 
-**Why this is hard — not just under-invested.**
+*SUBTOPIC · WHERE FINOPS BREAKS*
 
-Four challenges in token spend management.
+**Where cloud FinOps breaks for AI**
 
----
+- Tagging mismatch — infrastructure-first tools, application-first spend
+- Spend fragmentation — across vendors
+- No benchmarks — the category's too new
+- Forecasting is guessing — the adoption curve is vertical
 
-### Slide 6 — Challenge 1: Tagging Mismatch
-
-**Cloud tagging is infrastructure-first. AI is application-first.**
-
-- Tag an EC2 instance → it runs for hours → the bill shows exactly whose it is.
-- An AI request happens in 50 milliseconds and is gone before you can tag it.
-
-**The fix:** tag at API-call time, inside the application code.
+**Speaker notes:**
+Cloud tagging is infrastructure-first: you tag an EC2 instance, it runs for hours, the bill shows exactly whose it is. AI is application-first — a request happens in 50 milliseconds and is gone before you can tag it. The fix is tagging at API-call time, inside your application code. Meanwhile, AI spend fragments across vendors: AWS Bedrock $2,000, OpenAI $1,500, Anthropic $800, Pinecone $300 — $4,600 total, but finance's AWS view shows only $2,000. In cloud, a t2.micro costs about $10 a month, a c5.large about $85 — public, known numbers you can benchmark against. With AI, nobody knows what a chatbot should cost per user — the industry is too new, there's no historical data. Cloud forecasting is straightforward: $100,000 a month, forecast $100,000 next month, usually right. AI forecasting is guessing: $0 last month, $5,000 this month, $50,000 next — the adoption curve is vertical. One FinOps leader said: we went from $10,000 to $100,000 in two months. Nobody predicted it.
 
 ---
 
-### Slide 7 — Challenge 2: Spend Fragmentation
+### Slide 6 — Primary Drivers of LLM Cost
 
-**Your AI bill is bigger than your cloud bill shows.**
+*SUBTOPIC 1.3 · PRIMARY DRIVERS OF LLM COST*
 
-| Vendor | Spend |
-|---|---|
-| AWS Bedrock | $2,000 |
-| OpenAI | $1,500 |
-| Anthropic | $800 |
-| Pinecone | $300 |
-| **Real total** | **$4,600** |
-
-Finance's AWS-only view: **$2,000.**
-Over half the spend is invisible to whoever's supposed to be watching it.
-
----
-
-### Slide 8 — Challenge 3: No Benchmarks
-
-**Cloud has known prices. AI doesn't — yet.**
-
-- A t2.micro: ~$10/month. A c5.large: ~$85/month. Public, known, benchmarkable.
-- Nobody knows what a chatbot *should* cost per user. The category's too new. No historical data.
-
----
-
-### Slide 9 — Challenge 4: Forecasting Is Guessing
-
-**Cloud forecasting: straightforward. AI forecasting: a guess.**
-
-- Cloud: spend $100K this month → forecast $100K next month → usually right.
-- AI: $0 last month → $5K this month → $50K next. The adoption curve is vertical.
-
-*"We went from $10,000 to $100,000 in two months. Nobody predicted it."*
-— a FinOps leader
-
----
-
-### Slide 10 — Section: Primary Drivers of LLM Cost
-
-**Three things shape the bill.**
+**Three things shape the bill**
 
 **Cost = Request Shape × Usage Scale × Overhead**
 
----
-
-### Slide 11 — The Three Drivers
-
-- **Request Shape** — input tokens, output tokens, context-window size. The size of one transaction.
-- **Usage Scale** — model tier, request volume, number of model calls. How many transactions, on which model.
-- **Overhead** — retries, agent loops, latency requirements forcing costlier models.
+**Speaker notes:**
+A provider rate card tells you the price of a unit — your application design determines how many units you consume. The eight drivers we just walked through actually collapse into three things. Request shape: input tokens, output tokens, and context-window size — the shape and size of each individual transaction. Usage scale: model tier, request volume, and number of model calls — how many transactions you're running, and on which model. And overhead: retries, agent loops, and latency requirements that force costlier models. Here's the key relationship — overhead is not a separate cost bucket added on top. It's a multiplier on the first two. A retry doesn't add a flat fee, it reruns the exact same request shape and usage-scale work a second time. A latency requirement that forces a pricier model doesn't sit outside usage scale, it inflates it. So the real equation is cost equals request shape times usage scale, all multiplied by overhead — where overhead is a multiplier starting at 1.0 for zero waste, and climbing above that for every retry, loop, or forced upgrade. That's why cutting overhead has an outsized effect: it doesn't just remove a cost, it removes a multiplier on everything else.
 
 ---
 
-### Slide 12 — Overhead Is a Multiplier, Not a Line Item
-
-Overhead isn't added on top. It **multiplies** the first two.
-
-A retry doesn't add a flat fee — it reruns the exact same request shape and usage-scale work again.
-
-Overhead starts at **1.0** for zero waste. It climbs with every retry, loop, or forced upgrade.
-
-**Cutting overhead doesn't just remove a cost — it removes a multiplier on everything else.**
-
----
-
-### Slide 13 — The Framework
+### Slide 7 — The Framework
 
 **Inform → Optimize → Operate**
 
@@ -132,7 +76,7 @@ The three-stage arc you're taking home.
 
 ---
 
-### Slide 14 — Stage 1: Inform (Visibility)
+### Slide 8 — Stage 1: Inform (Visibility)
 
 **The INFORM framework:**
 Ingestion → Normalization → Allocation → Showback
@@ -145,7 +89,7 @@ Showback drives optimization — you can't cut a cost you can't see.
 
 ---
 
-### Slide 15 — Stage 2: Optimize (Levers)
+### Slide 9 — Stage 2: Optimize (Levers)
 
 **The big three, in impact order:**
 
@@ -159,7 +103,7 @@ Watch for the trap: published price ≠ real cost. Egress, throttling, and regio
 
 ---
 
-### Slide 16 — Stage 3: Operate (the 21.5x story)
+### Slide 10 — Stage 3: Operate (the 21.5x story)
 
 **One support question. Eight API calls.**
 
@@ -172,7 +116,7 @@ A support agent answers one billing question — re-sending full context at ever
 
 ---
 
-### Slide 17 — Five Guardrails + the KPI Shift
+### Slide 11 — Five Guardrails + the KPI Shift
 
 **Max depth · Max tokens/task · Retry limit · Timeout · Explicit fallback**
 
@@ -182,7 +126,7 @@ In healthcare and finance: guardrails aren't optional. You need to audit what an
 
 ---
 
-### Slide 18 — Try It Yourself
+### Slide 12 — Try It Yourself
 
 **[QR code]**
 
@@ -190,7 +134,7 @@ A token-cost calculator. Take it with you. Run your own numbers tonight.
 
 ---
 
-### Slide 19 — Close
+### Slide 13 — Close
 
 **One question for founders:**
 Which stage are you actually in — Inform, Optimize, or Operate?
