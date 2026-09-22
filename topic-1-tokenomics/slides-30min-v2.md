@@ -109,7 +109,7 @@ Watch for the trap: published price ≠ real cost. Egress, throttling, and regio
 
 ### Slide 10 — Stage 3: Tame (the 21.5x story)
 
-**Build guardrails to detect and act**
+**Build the guardrails that detect and act**
 
 **One support question. Eight API calls.**
 
