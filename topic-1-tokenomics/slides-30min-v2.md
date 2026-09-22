@@ -70,16 +70,18 @@ A provider rate card tells you the price of a unit — your application design d
 
 ### Slide 7 — The Framework
 
-**Inform → Optimize → Operate**
+**Track → Trim → Tame**
 
-The three-stage arc you're taking home.
+Track your AI spend, trim the waste, tame the parts — like agents — that can spiral on their own.
 
 ---
 
-### Slide 8 — Stage 1: Inform (Visibility)
+### Slide 8 — Stage 1: Track (Visibility)
 
-**The INFORM framework:**
-Ingestion → Normalization → Allocation → Showback
+**See where every dollar of AI spend actually goes**
+
+*(The course's underlying model for this stage is the INFORM framework:*
+*Ingestion → Normalization → Allocation → Showback)*
 
 - Tag at the **API-call level** — team / app / cost-center / environment.
 - **Anomaly detection:** usage anomalies, model anomalies, cost anomalies.
@@ -89,7 +91,9 @@ Showback drives optimization — you can't cut a cost you can't see.
 
 ---
 
-### Slide 9 — Stage 2: Optimize (Levers)
+### Slide 9 — Stage 2: Trim (Levers)
+
+**Cut the bill without cutting capability**
 
 **The big three, in impact order:**
 
@@ -103,7 +107,9 @@ Watch for the trap: published price ≠ real cost. Egress, throttling, and regio
 
 ---
 
-### Slide 10 — Stage 3: Operate (the 21.5x story)
+### Slide 10 — Stage 3: Tame (the 21.5x story)
+
+**Build guardrails to detect and act**
 
 **One support question. Eight API calls.**
 
@@ -137,7 +143,7 @@ A token-cost calculator. Take it with you. Run your own numbers tonight.
 ### Slide 13 — Close
 
 **One question for founders:**
-Which stage are you actually in — Inform, Optimize, or Operate?
+Which stage are you actually in — Track, Trim, or Tame?
 
 **One question for investors:**
 Ask a startup that question before you ask for the pitch deck.
