@@ -130,8 +130,8 @@ Nobody approved this. Nobody caught it. That's the gap Tame closes — starting 
 
 **Governance foundations — the "who" behind the guardrails:**
 
-- **An AI council** — a small, cross-functional body (engineering, finance, compliance) that sets standards and owns the guardrails policy. Doesn't need to be full-time — a 30-minute biweekly review catches most of what matters.
-- **Design-time cost review** — one question, asked at architecture-review time, not after the bill arrives: *"Did you consider a cheaper model, and why did you reject it?"*
+- **An AI council** — a cross-functional body (engineering, finance, compliance, business/product) that sets the org's AI strategy, use-case priorities, and best-practice guidance. The guardrails policy is one output of that mandate, not the whole job.
+- **Design-time review = a TCO/ROI business case** — before a use case is approved: full total cost of ownership (compute, data, engineering, ongoing ops) weighed against the value it's expected to return. Not after the bill arrives — at the decision point.
 
 **Stop non-compliant AI spend before it ships.**
 
