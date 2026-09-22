@@ -128,6 +128,11 @@ Nobody approved this. Nobody caught it. That's the gap Tame closes — starting 
 
 **Build the guardrails that detect and act — starting with prevention.**
 
+**Governance foundations — the "who" behind the guardrails:**
+
+- **An AI council** — a small, cross-functional body (engineering, finance, compliance) that sets standards and owns the guardrails policy. Doesn't need to be full-time — a 30-minute biweekly review catches most of what matters.
+- **Design-time cost review** — one question, asked at architecture-review time, not after the bill arrives: *"Did you consider a cheaper model, and why did you reject it?"*
+
 **Stop non-compliant AI spend before it ships.**
 
 - **Shift-left PR compliance** — a pull request missing required tags, cost-center labels, or budget approval doesn't merge. Compliance is a gate before deployment, not a report after the bill arrives.
