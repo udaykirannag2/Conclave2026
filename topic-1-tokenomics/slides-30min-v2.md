@@ -84,7 +84,7 @@ Track your AI spend, trim the waste, tame the parts — like agents — that can
 
 - **Find it** — identify every AI implementation across the org and classify its use case. You can't tag what you haven't inventoried.
 - **Tag it** — at the **API-call level**: team / app / cost-center / environment.
-- **Show it** — anomaly detection (usage, model, cost) feeding showback dashboards, tailored per audience: CFO, team lead, engineer.
+- **Show it** — showback dashboards, tailored per audience: exec dashboards for CFO/CIO, engineering dashboards for teams.
 
 Showback drives optimization — you can't cut a cost you can't see.
 
@@ -124,9 +124,11 @@ A support agent answers one billing question — re-sending full context at ever
 
 ---
 
-### Slide 11 — Five Guardrails + the KPI Shift
+### Slide 11 — Detect and Act: Five Guardrails + the KPI Shift
 
-**Max depth · Max tokens/task · Retry limit · Timeout · Explicit fallback**
+**Detect it** — anomaly detection: usage anomalies, model anomalies, cost anomalies. This is governance's early-warning system, not a dashboard feed.
+
+**Act on it** — five guardrails: **Max depth · Max tokens/task · Retry limit · Timeout · Explicit fallback**
 
 The KPI that matters: **cost per task**, not cost per call — the unit that lets you compare human work, machine work, and hybrid work.
 
