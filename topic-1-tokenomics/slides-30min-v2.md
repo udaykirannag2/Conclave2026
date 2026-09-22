@@ -80,14 +80,16 @@ Track your AI spend, trim the waste, tame the parts — like agents — that can
 
 **See where every dollar of AI spend actually goes**
 
-*(The course's underlying model for this stage is the INFORM framework:*
-*Ingestion → Normalization → Allocation → Showback)*
+*Find it → Tag it → Show it*
 
-- Tag at the **API-call level** — team / app / cost-center / environment.
-- **Anomaly detection:** usage anomalies, model anomalies, cost anomalies.
-- **Showback dashboards:** different metrics for CFO, team lead, engineer.
+- **Find it** — identify every AI implementation across the org and classify its use case. You can't tag what you haven't inventoried.
+- **Tag it** — at the **API-call level**: team / app / cost-center / environment.
+- **Show it** — anomaly detection (usage, model, cost) feeding showback dashboards, tailored per audience: CFO, team lead, engineer.
 
 Showback drives optimization — you can't cut a cost you can't see.
+
+*(The course's underlying model for this stage is the INFORM framework:*
+*Ingestion → Normalization → Allocation → Showback — the same shape as Find/Tag/Show, one layer more granular.)*
 
 ---
 
