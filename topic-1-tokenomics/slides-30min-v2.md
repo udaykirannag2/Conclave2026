@@ -1,6 +1,6 @@
 # Topic 1 — 30-Minute Slide Words (v2)
 
-Content for a 13-slide deck matching [`outline-30min-v2.md`](outline-30min-v2.md). Words only — no layout, imagery, or design direction. Slides 5 and 6 follow the sparse-slide-plus-speaker-notes pattern from the source [Module 1 Slides design doc](https://claude.ai/design/p/772ae942-8d32-4921-ba76-3943adcdb6fb) (slides 25 and 16) — minimal on-screen text, full narration in speaker notes.
+Content for a 14-slide deck matching [`outline-30min-v2.md`](outline-30min-v2.md). Words only — no layout, imagery, or design direction. Slides 5 and 6 follow the sparse-slide-plus-speaker-notes pattern from the source [Module 1 Slides design doc](https://claude.ai/design/p/772ae942-8d32-4921-ba76-3943adcdb6fb) (slides 25 and 16) — minimal on-screen text, full narration in speaker notes.
 
 ---
 
@@ -109,9 +109,7 @@ Watch for the trap: published price ≠ real cost. Egress, throttling, and regio
 
 ---
 
-### Slide 10 — Stage 3: Tame (the 21.5x story)
-
-**Build the guardrails that detect and act**
+### Slide 10 — Stage 3: Tame — What Ungoverned AI Spend Looks Like
 
 **One support question. Eight API calls.**
 
@@ -122,13 +120,27 @@ A support agent answers one billing question — re-sending full context at ever
 
 **21.5x the cost.** Before retries push it past 50x — or an unbounded loop makes it a surprise on the monthly bill.
 
+Nobody approved this. Nobody caught it. That's the gap Tame closes — starting before the agent ever runs.
+
 ---
 
-### Slide 11 — Detect and Act: Five Guardrails + the KPI Shift
+### Slide 11 — Prevent It
 
-**Detect it** — anomaly detection: usage anomalies, model anomalies, cost anomalies. This is governance's early-warning system, not a dashboard feed.
+**Build the guardrails that detect and act — starting with prevention.**
 
-**Act on it** — five guardrails: **Max depth · Max tokens/task · Retry limit · Timeout · Explicit fallback**
+**Stop non-compliant AI spend before it ships.**
+
+- **Shift-left PR compliance** — a pull request missing required tags, cost-center labels, or budget approval doesn't merge. Compliance is a gate before deployment, not a report after the bill arrives.
+- **Model allowlist** — no calls to unapproved models. Blocks shadow-AI spend on ungoverned tools before it starts.
+- **Region restrictions** — AI calls only route through approved regions. Same shift-left logic, and it doubles as a data-residency/compliance control for regulated industries.
+
+---
+
+### Slide 12 — Detect and Act
+
+**Detect it** — anomaly detection: usage anomalies, model anomalies, cost anomalies. The early-warning system for what got through Prevent.
+
+**Act on it** — five guardrails: **Max depth · Max tokens/task · Retry limit · Timeout · Explicit fallback** — plus a **kill switch**: one command to halt a runaway agent or pipeline org-wide.
 
 The KPI that matters: **cost per task**, not cost per call — the unit that lets you compare human work, machine work, and hybrid work.
 
@@ -136,7 +148,7 @@ In healthcare and finance: guardrails aren't optional. You need to audit what an
 
 ---
 
-### Slide 12 — Try It Yourself
+### Slide 13 — Try It Yourself
 
 **[QR code]**
 
@@ -144,7 +156,7 @@ A token-cost calculator. Take it with you. Run your own numbers tonight.
 
 ---
 
-### Slide 13 — Close
+### Slide 14 — Close
 
 **One question for founders:**
 Which stage are you actually in — Track, Trim, or Tame?
